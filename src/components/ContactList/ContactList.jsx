@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { Item, List, Button } from './ContactList.styled';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 export class ContactList extends Component {
   render() {
@@ -28,14 +28,14 @@ export class ContactList extends Component {
   }
 }
 
-ContactList.propType = {
-  resultData: PropTypes.arrayOf(
-    PropTypes.objectOf({
-      id: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      number: PropTypes.number.isRequired,
-    })
-  ).isRequired,
+// ContactList.propType = {
+//   resultData: PropTypes.arrayOf(
+//     PropTypes.objectOf({
+//       id: PropTypes.string.isRequired,
+//       name: PropTypes.string.isRequired,
+//       number: PropTypes.number.isRequired,
+//     })
+//   ).isRequired,
 
-  onDelete: PropTypes.func.isRequired,
-};
+//   onDelete: PropTypes.func.isRequired,
+// };

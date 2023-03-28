@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { Input, Title } from './Filter.styled';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 export class Filter extends Component {
   render() {
@@ -14,7 +14,7 @@ export class Filter extends Component {
   }
 }
 
-Filter.propTypes = {
-  onChange: PropTypes.func.isRequired,
-  value: PropTypes.string.isRequired,
-};
+// Filter.propTypes = {
+//   onChange: PropTypes.func.isRequired,
+//   value: PropTypes.string.isRequired,
+// };
