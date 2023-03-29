@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { Label, Button, Input } from './ContactForm.styled';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 export class ContactForm extends Component {
   state = {
@@ -9,8 +9,7 @@ export class ContactForm extends Component {
   };
   hendleInputChange = event => {
     const { name, value } = event.currentTarget;
-    console.log(name);
-    console.log(value);
+
     this.setState({ [name]: value });
   };
   onSubmit = event => {
@@ -56,6 +55,6 @@ export class ContactForm extends Component {
   }
 }
 
-// ContactForm.propTypes = {
-//   onSubmit: PropTypes.func.isRequired,
-// };
+ContactForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};
