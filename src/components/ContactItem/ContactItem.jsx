@@ -1,7 +1,7 @@
-import { Item, Button } from './ComponentItem.styled';
+import { Item, Button } from './ContactItem.styled';
 import PropTypes from 'prop-types';
 
-export function ComponentItem({ name, number, onDelete, id }) {
+export function ContactItem({ name, number, onDelete, id }) {
   return (
     <Item>
       {name}: {number}
@@ -17,7 +17,7 @@ export function ComponentItem({ name, number, onDelete, id }) {
   );
 }
 
-ComponentItem.propTypes = {
+ContactItem.propTypes = {
   name: PropTypes.string.isRequired,
   number: PropTypes.string.isRequired,
   onDelete: PropTypes.func.isRequired,

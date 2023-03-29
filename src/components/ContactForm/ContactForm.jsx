@@ -14,11 +14,17 @@ export class ContactForm extends Component {
   };
   onSubmit = event => {
     event.preventDefault();
+    console.log(this.state.name);
+    console.log(event.currentTarget.name.value);
 
     this.props.onSubmit(this.state);
     this.reset();
   };
+
   reset = () => {
+    this.setState({ name: '', number: '' });
+  };
+  resetName = () => {
     this.setState({ name: '' });
   };
   render() {
