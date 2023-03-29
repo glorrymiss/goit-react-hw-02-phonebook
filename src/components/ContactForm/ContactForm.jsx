@@ -18,15 +18,14 @@ export class ContactForm extends Component {
     console.log(event.currentTarget.name.value);
 
     this.props.onSubmit(this.state);
+
     this.reset();
   };
 
   reset = () => {
     this.setState({ name: '', number: '' });
   };
-  resetName = () => {
-    this.setState({ name: '' });
-  };
+
   render() {
     const { name, number } = this.state;
     return (
