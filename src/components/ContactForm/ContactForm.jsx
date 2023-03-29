@@ -19,7 +19,7 @@ export class ContactForm extends Component {
     this.reset();
   };
   reset = () => {
-    this.setState({ name: '', number: '' });
+    this.setState({ name: '' });
   };
   render() {
     const { name, number } = this.state;
